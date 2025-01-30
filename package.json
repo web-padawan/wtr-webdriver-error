@@ -1,0 +1,16 @@
+{
+  "name": "wtr-webdriver-error",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "selenium-standalone install",
+    "test": "selenium-standalone start & web-test-runner test/*.test.js --node-resolve",
+    "update": "TEST_ENV=update npm test"
+  },
+  "devDependencies": {
+    "@web/test-runner": "^0.19.0" ,
+    "@web/test-runner-webdriver": "^0.9.0",
+    "@web/test-runner-visual-regression": "^0.10.0",
+    "selenium-standalone": "^10.0.0"
+  }
+}
