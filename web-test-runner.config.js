@@ -6,7 +6,7 @@ export default {
   nodeResolve: true,
   filterBrowserLogs: (log) => {
     // Filter out webdriver debug output
-    if (log.type === 'debug' && message.startsWith('[WDIO]')) {
+    if (log.type === 'debug' && log.args[0].startsWith('[WDIO]')) {
       return false;
     }
 
