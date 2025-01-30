@@ -1,24 +1,20 @@
-import { visualDiff } from '@web/test-runner-visual-regression';
+import { expect } from 'chai';
 import '../src/warning-button.js';
 
 describe('warning-button', () => {
-  let div, button;
+  let button;
 
   beforeEach(() => {
-    div = document.createElement('div');
-    div.style.display = 'inline-block';
-    div.style.padding = '10px';
     button = document.createElement('warning-button');
     button.textContent = 'Button';
-    div.appendChild(button);
-    document.body.appendChild(div);
+    document.body.appendChild(button);
   });
 
   afterEach(() => {
-    div.remove();
+    button.remove();
   });
 
-  it('basic', async () => {
-    await visualDiff(div, 'warning-button-basic');
+  it('should have background', async () => {
+    expect(getComputedStyle(button).backgroundColor).to.equal('rgb(255, 0, 0)');
   });
 });

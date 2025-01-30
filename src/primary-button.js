@@ -7,7 +7,7 @@ customElements.define('primary-button', class extends HTMLElement {
         :host {
           display: block;
           color: #fff;
-          background: #1e88e5;
+          background: blue;
           padding: 6px 12px;
         }
       </style>

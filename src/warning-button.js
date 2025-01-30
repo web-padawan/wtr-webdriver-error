@@ -7,7 +7,7 @@ customElements.define('warning-button', class extends HTMLElement {
         :host {
           display: block;
           color: #fff;
-          background: #f44336;
+          background: red;
           padding: 6px 12px;
         }
       </style>

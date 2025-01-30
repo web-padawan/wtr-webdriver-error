@@ -12,12 +12,6 @@ Run the tests:
 npm test
 ```
 
-Update screenshots:
-
-```sh
-npm run update
-```
-
 ## Note
 
 Comment out `filterBrowserLogs` in `web-test-runner.config.js` to enable WDIO debug logging for ShadowRootManager.

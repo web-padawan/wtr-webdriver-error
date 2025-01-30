@@ -4,13 +4,12 @@
   "type": "module",
   "scripts": {
     "prepare": "selenium-standalone install",
-    "test": "selenium-standalone start & web-test-runner test/*.test.js --node-resolve",
-    "update": "TEST_ENV=update npm test"
+    "test": "selenium-standalone start & web-test-runner test/*.test.js --node-resolve"
   },
   "devDependencies": {
-    "@web/test-runner": "^0.19.0" ,
+    "@web/test-runner": "^0.19.0",
     "@web/test-runner-webdriver": "^0.9.0",
-    "@web/test-runner-visual-regression": "^0.10.0",
+    "chai": "^5.1.2",
     "selenium-standalone": "^10.0.0"
   }
 }

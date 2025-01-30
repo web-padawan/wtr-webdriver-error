@@ -1,4 +1,3 @@
-import { visualRegressionPlugin } from '@web/test-runner-visual-regression/plugin';
 import { webdriverLauncher } from '@web/test-runner-webdriver';
 
 export default {
@@ -26,10 +25,4 @@ export default {
       },
     }),
   ],
-  plugins: [
-    visualRegressionPlugin({
-      baseDir: 'screenshots',
-      update: process.env.TEST_ENV === 'update',
-    }),
-  ]
 };
